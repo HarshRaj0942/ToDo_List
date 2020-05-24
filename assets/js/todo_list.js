@@ -29,9 +29,14 @@ $("input[type=text]").on("keypress", function (event) {
 
     //create a new LI and add the todo_text to it
 
-    $("ul").append("<li><span>X</span> " + todo_text + "</li>");
+    $("ul").append("<li><span><i class=\"fa fa-trash\"></i></span> " + todo_text + "</li>");
 
     //clear input
     $(this).val("");
   }
 });
+
+$(".fa-plus").on("click",function(){
+
+    $("#input").fadeToggle(200);
+})
