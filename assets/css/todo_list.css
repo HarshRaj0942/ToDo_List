@@ -1,10 +1,41 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 #container {
-    border: 3px solid grey;
-    margin: 0 auto;
-    width: 360px;
+  /* we use a box shadow, check it out!*/
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+  width: 360px;
+  background: #f7f7f7;
 }
 
 .completed {
-    color:gray;
-    text-decoration: line-through;
+  color: gray;
+  text-decoration: line-through;
+}
+
+h1 {
+  background: #2980b9;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    background: white;
+
+}
+
+/*style every other li this way*/
+li:nth-child(2n) {
+    background: #f7f7f7;
 }
